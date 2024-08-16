@@ -12,6 +12,7 @@
       self,
       nixpkgs,
       nixpkgs-unstable,
+      ...
     }@inputs:
     let
       defaultOpts = import ./nix/opts.nix;

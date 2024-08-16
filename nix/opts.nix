@@ -19,7 +19,9 @@
     json.enabled = false;
     lua.enabled = false;
     markdown.enabled = false;
+    matlab.enabled = false;
     mcfunction.enabled = false;
+    nginx.enabled = false;
     nix.enabled = false;
     nushell.enabled = false;
     ocaml.enabled = false;
