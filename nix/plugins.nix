@@ -1,6 +1,5 @@
 { pkgs }:
-with pkgs.vimPlugins;
-[
+with pkgs.vimPlugins; [
   alpha-nvim
   boole-nvim
   bufferline-nvim
@@ -10,6 +9,7 @@ with pkgs.vimPlugins;
   cmp-path
   cmp_luasnip
   codeium-nvim
+  colorful-winsep-nvim
   comment-nvim
   conform-nvim
   dressing-nvim
