@@ -17,12 +17,12 @@
     java.enabled = false;
     javascript.enabled = false;
     json.enabled = false;
-    lua.enabled = false;
+    lua.enabled = true;
     markdown.enabled = false;
     matlab.enabled = false;
     mcfunction.enabled = false;
     nginx.enabled = false;
-    nix.enabled = false;
+    nix.enabled = true;
     nushell.enabled = false;
     ocaml.enabled = false;
     perl.enabled = false;
