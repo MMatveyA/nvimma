@@ -37,11 +37,7 @@ in pkgs.neovim.override {
       lua <<EOF
       vim.loader.enable()
       vim.opt.rtp:prepend('${nvimmaRtp}/lua')
-    '' + ''
-      vim.g.nvimma = {
-        ${luaOpts}
-      }
-    '' + (readFile ../nvim/init.lua) + ''
+    '' + vimInit + (readFile ../nvim/init.lua) + ''
       vim.opt.rtp:prepend('${nvimmaRtp}/nvim')
       EOF
     '';
@@ -50,4 +46,3 @@ in pkgs.neovim.override {
       + " " + ''--set LIBSQLITE "${pkgs.sqlite.out}/lib/libsqlite3.so"'';
   };
 }
-
