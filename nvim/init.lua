@@ -1,4 +1,4 @@
-require "colours.colorscheme"
-require "util"
-require "util.opts"
-require "plugins"
+require("colours.colorscheme")
+require("util")
+require("util.opts")
+require("plugins")

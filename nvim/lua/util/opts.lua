@@ -21,12 +21,12 @@ opt.conceallevel = 2
 opt.confirm = false
 opt.cursorline = true
 opt.fillchars = {
-  diff = "╱",
-  eob = " ",
-  fold = " ",
-  foldclose = "",
-  foldopen = "",
-  foldsep = " ",
+	diff = "╱",
+	eob = " ",
+	fold = " ",
+	foldclose = "",
+	foldopen = "",
+	foldsep = " ",
 }
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
@@ -53,4 +53,3 @@ opt.updatetime = 200
 opt.wildmode = "longest:full,full"
 opt.winminwidth = 5
 opt.wrap = false
-
