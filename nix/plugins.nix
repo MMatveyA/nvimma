@@ -27,6 +27,10 @@ with pkgs.vimPlugins;
   nvim-autopairs
   nvim-cmp
   nvim-colorizer-lua
+  nvim-dap-virtual-text
+  nvim-dap-ui
+  nvim-dap
+  nvim-dap-repl-highlights
   nvim-lint
   nvim-lspconfig
   nvim-notify
@@ -43,10 +47,7 @@ with pkgs.vimPlugins;
   vim-markdown-toc
   vim-mcfunction
   vim-tmux-navigator
+  which-key-nvim
   wrapping-nvim
   telescope-dap-nvim
-  nvim-dap-virtual-text
-  nvim-dap-ui
-  nvim-dap
-  nvim-dap-repl-highlights
 ]
