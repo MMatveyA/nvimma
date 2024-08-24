@@ -81,6 +81,15 @@ in {
         url = "https://github.com/nvim-zh/colorful-winsep.nvim";
       };
     };
+    cmp-vimtex = pkgs.vimUtils.buildVimPlugin {
+      name = "cmp-vimtex";
+      src = pkgs.fetchFromGitHub {
+        owner = "micangl";
+        repo = "cmp-vimtex";
+        rev = "613fbfc54d9488252b0b0289d6d1d60242513558";
+        hash = "sha256-07FqXsRe0RP5f3b6osrsi5gai+bZi9ybm5JL/nnBH+4=";
+      };
+    };
     gen-nvim = pkgs.vimUtils.buildVimPlugin {
       name = "gen-nvim";
       src = builtins.fetchGit {
@@ -123,4 +132,3 @@ in {
     };
   };
 }
-

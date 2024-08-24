@@ -1,5 +1,6 @@
 { pkgs }:
-with pkgs.vimPlugins; [
+with pkgs.vimPlugins;
+[
   alpha-nvim
   boole-nvim
   bufferline-nvim
@@ -24,6 +25,8 @@ with pkgs.vimPlugins; [
   luasnip
   markdown-preview-nvim
   mini-surround
+  neotest
+  neotest-rust
   nvim-autopairs
   nvim-cmp
   nvim-colorizer-lua
@@ -50,4 +53,4 @@ with pkgs.vimPlugins; [
   which-key-nvim
   wrapping-nvim
   telescope-dap-nvim
-]
+] ++ [ cmp-vimtex vimtex ]

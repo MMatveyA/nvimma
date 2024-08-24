@@ -18,6 +18,7 @@
     javascript.enabled = false;
     json.enabled = false;
     lua.enabled = true;
+    latex.enabled = false;
     markdown.enabled = false;
     matlab.enabled = false;
     mcfunction.enabled = false;

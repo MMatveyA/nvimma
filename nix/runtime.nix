@@ -139,6 +139,12 @@ else
 ] else
   [ ])
 
+++ (if opts.langs.all.enabled || opts.langs.latex.enabled then [
+  pplatex
+  texlab
+] else
+  [ ])
+
 ++ (if opts.langs.all.enabled || opts.langs.lua.enabled then [
   lua-language-server
   luaPackages.luacheck
