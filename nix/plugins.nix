@@ -47,6 +47,7 @@ with pkgs.vimPlugins;
   tokyonight-nvim
   trim-nvim
   undotree-nvim
+  vim-latex-live-preview
   vim-markdown-toc
   vim-mcfunction
   vim-tmux-navigator
