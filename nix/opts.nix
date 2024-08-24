@@ -1,9 +1,8 @@
 {
   langs = {
-    all.enabled = false;
+    all.enabled = true;
     arduino.enabled = false;
     assembly.enabled = false;
-    awk.enabled = false;
     cpp.enabled = false;
     css.enabled = false;
     docker.enabled = false;

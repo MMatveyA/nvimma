@@ -26,18 +26,6 @@ with pkgs;
 else
   [ ])
 
-++ (if opts.langs.all.enabled || opts.langs.assembly.enabled then [
-  asm-lsp
-  asmfmt
-  nasm
-] else
-  [ ])
-
-++ (if opts.langs.all.enabled || opts.langs.awk.enabled then
-  [ awk-language-server ]
-else
-  [ ])
-
 ++ (if opts.langs.all.enabled || opts.langs.shell.enabled then [
   beautysh
   nodePackages.bash-language-server
@@ -161,11 +149,6 @@ else
 
 ++ (if opts.langs.all.enabled || opts.langs.matlab.enabled then
   [ matlab-language-server ]
-else
-  [ ])
-
-++ (if opts.langs.all.enabled || opts.langs.mcfunction.enabled then
-  [ spyglassmc-language-server ]
 else
   [ ])
 
