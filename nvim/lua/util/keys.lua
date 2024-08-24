@@ -5,6 +5,7 @@ require("which-key")
 -- Keybinds
 local keybinds = {
 	-- General
+	{ "jj", action = "<ESC>", desc = "Exit in normal mode", modes = { "i" } },
 	{ "<C-s>", action = ":wa<CR>", desc = "Save all files", modes = { "n" } },
 	{
 		"<leader>hh",
