@@ -1,5 +1,4 @@
-vim.g.vimtex_view_general_viewer = "zathura"
-vim.g.vimtex_view_general_options = "--synctex-forward @line:@col:'@tex' '@pdf'"
+vim.g.vimtex_view_method = "zathura"
 vim.g.vimtex_compiler_progname = "nvr"
 vim.g.tex_flavor = "latex"
 vim.g.vimtex_quickfix_enabled = 1
