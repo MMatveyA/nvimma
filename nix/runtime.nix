@@ -34,6 +34,12 @@ else
 ] else
   [ ])
 
+++ (if opts.langs.all.enabled || opts.langs.cmake.enabled then [
+  cmake-format
+  cmake-language-server
+] else
+  [ ])
+
 ++ (if opts.langs.all.enabled || opts.langs.cpp.enabled then [
   ccls
   clang-tools

@@ -3,6 +3,7 @@
     all.enabled = true;
     arduino.enabled = true;
     assembly.enabled = false;
+    cmake.enable = true;
     cpp.enabled = true;
     css.enabled = true;
     docker.enabled = true;

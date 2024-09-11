@@ -57,6 +57,15 @@ lsps.setup_handlers({
 			filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
 		})
 	end,
+	["cmakels"] = function()
+		lsps.lspconfig.setup({
+			cmd = { "cmake-language-server" },
+			filetypes = { "cmake" },
+			initOptions = {
+				buildDirectory = "build",
+			},
+		})
+	end,
 	["fortls"] = function()
 		lsps.lspconfig.fortls.setup({
 			root_dir = function()

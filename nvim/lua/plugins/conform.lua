@@ -16,6 +16,7 @@ require("conform").setup({
 		asm = { "asmfmt" },
 		astro = { "prettierd" },
 		c = { "clang-format" },
+		cmake = { "cmake_format" },
 		cpp = { "clang-format" },
 		css = { "prettierd" },
 		fennel = { "fnlfmt" },
