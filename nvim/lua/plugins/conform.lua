@@ -16,6 +16,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		asm = { "asmfmt" },
 		astro = { "prettierd" },
+		bib = { "latexindent" },
 		c = { "clang-format" },
 		cmake = { "cmake_format" },
 		cpp = { "clang-format" },
