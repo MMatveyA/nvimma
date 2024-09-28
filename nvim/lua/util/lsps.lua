@@ -42,6 +42,7 @@ M.langs = {
 	javascript = { "biome", "postgres_lsp", "graphql", "tsserver" },
 	json = { "jsonls" },
 	kotlin = { "kotlin_language_server" },
+	latex = { "ltex" },
 	lua = { "lua_ls" },
 	markdown = { "marksman" },
 	matlab = { "matlab_ls" },

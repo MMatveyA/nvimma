@@ -21,6 +21,7 @@ with pkgs.vimPlugins;
   indent-blankline-nvim
   lsp-zero-nvim
   lspkind-nvim
+  ltex_extra-nvim
   lualine-nvim
   luasnip
   markdown-preview-nvim

@@ -82,6 +82,9 @@ lsps.setup_handlers({
 	end,
 	["ltex"] = function()
 		lsps.lspconfig.ltex.setup({
+			on_attach = function(client, bufnr)
+				require("ltex_extra").setup({})
+			end,
 			cmd = { "ltex-ls" },
 			single_file_support = true,
 			settings = {
