@@ -134,6 +134,8 @@ else
   [ ])
 
 ++ (if opts.langs.all.enabled || opts.langs.latex.enabled then [
+  languagetool
+  ltex-ls
   pplatex
   texlab
 ] else

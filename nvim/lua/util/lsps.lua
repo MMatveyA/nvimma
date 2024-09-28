@@ -57,6 +57,7 @@ M.langs = {
 	rust = { "bacon_ls", "rust_analyzer" },
 	scala = { "metals" },
 	svelte = { "svelte" },
+	tex = { "ltex" },
 	toml = { "taplo" },
 	typescript = { "biome", "postgres_lsp", "graphql", "tsserver" },
 	yaml = { "spectral", "yamlls" },

@@ -82,6 +82,8 @@ lsps.setup_handlers({
 	end,
 	["ltex"] = function()
 		lsps.lspconfig.ltex.setup({
+			cmd = { "ltex-ls" },
+			single_file_support = true,
 			settings = {
 				ltex = { language = "ru-RU" },
 			},
