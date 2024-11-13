@@ -24,6 +24,7 @@ with pkgs.vimPlugins;
   ltex_extra-nvim
   lualine-nvim
   luasnip
+  luasnip-latex-snippets-nvim
   markdown-preview-nvim
   mini-surround
   neotest
