@@ -120,6 +120,14 @@ in {
         url = "https://github.com/LiadOz/nvim-dap-repl-highlights";
       };
     };
+    rainbow-csv-nvim = pkgs.vimUtils.buildVimPlugin {
+      name = "rainbow-csv-nvim";
+      src = builtins.fetchGit {
+        ref = "main";
+        url = "https://github.com/cameron-wags/rainbow_csv.nvim";
+        rev = "7f3fddfe813641035fac2cdf94c2ff69bb0bf0b9";
+      };
+    };
     undotree-nvim = pkgs.vimUtils.buildVimPlugin {
       name = "undotree-nvim";
       src = builtins.fetchGit {
