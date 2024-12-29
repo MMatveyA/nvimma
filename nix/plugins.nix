@@ -7,15 +7,14 @@ with pkgs.vimPlugins;
   cmp-buffer
   cmp-nvim-lsp
   cmp-nvim-lua
+  cmp-nvim-ultisnips
   cmp-path
-  cmp_luasnip
   codeium-nvim
   colorful-winsep-nvim
   comment-nvim
   conform-nvim
   dressing-nvim
   flash-nvim
-  friendly-snippets
   gen-nvim
   gitsigns-nvim
   indent-blankline-nvim
@@ -23,8 +22,6 @@ with pkgs.vimPlugins;
   lspkind-nvim
   ltex_extra-nvim
   lualine-nvim
-  luasnip
-  luasnip-latex-snippets-nvim
   markdown-preview-nvim
   mini-surround
   neotest
@@ -46,6 +43,7 @@ with pkgs.vimPlugins;
   plenary-nvim
   rainbow-csv-nvim
   telescope-nvim
+  telescope-dap-nvim
   todo-comments-nvim
   tokyonight-nvim
   trim-nvim
@@ -53,8 +51,9 @@ with pkgs.vimPlugins;
   vim-latex-live-preview
   vim-markdown-toc
   vim-mcfunction
+  vim-snippets
   vim-tmux-navigator
   which-key-nvim
   wrapping-nvim
-  telescope-dap-nvim
+  ultisnips
 ] ++ [ cmp-vimtex vimtex ]

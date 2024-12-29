@@ -1,11 +1,10 @@
--- Utility
-local util = require("util.util")
-local theme = require("colours.theme").default
-local cmp = require("cmp")
-local luasnip = require("luasnip")
+require("cmp_nvim_ultisnips").setup({})
 
--- Setup luasnip
-require("luasnip.loaders.from_vscode").lazy_load()
+-- Utility
+local cmp = require("cmp")
+local cmp_ultisnips_mappings = require("cmp_nvim_ultisnips.mappings")
+local theme = require("colours.theme").default
+local util = require("util.util")
 
 -- Setup nvim cmp
 cmp.setup({
@@ -14,7 +13,7 @@ cmp.setup({
 	},
 	snippet = {
 		expand = function(args)
-			luasnip.lsp_expand(args.body)
+			vim.fn["UltiSnips#Anon"](args.body)
 		end,
 	},
 	formatting = {
@@ -39,36 +38,26 @@ cmp.setup({
 		["<C-Space>"] = cmp.mapping.complete(),
 		["<CR>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
-				if luasnip.expandable() then
-					luasnip.expand()
-				else
-					cmp.confirm({ select = true })
-				end
-			else
-				fallback()
-			end
-		end),
-		["<Tab>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-				cmp.select_next_item()
-			elseif luasnip.locally_jumpable(1) then
-				luasnip.jump(1)
+				cmp_ultisnips_mappings.compose({ "expand" })(fallback)
 			else
 				fallback()
 			end
 		end, { "i", "s" }),
+		["<Tab>"] = cmp.mapping(function(fallback)
+			cmp_ultisnips_mappings.compose({ "jump_forwards" })(fallback)
+		end, { "i", "s" }),
 		["<S-Tab>"] = cmp.mapping(function(fallback)
-			if cmp.visible() then
-				cmp.select_prev_item()
-			elseif luasnip.locally_jumpable(-1) then
-				luasnip.jump(-1)
-			else
-				fallback()
-			end
+			cmp_ultisnips_mappings.compose({ "jump_backwards" })(fallback)
+		end, { "i", "s" }),
+		["<C-f>"] = cmp.mapping(function(fallback)
+			cmp_ultisnips_mappings.compose({ "select_next_item" })(fallback)
+		end, { "i", "s" }),
+		["<C-b>"] = cmp.mapping(function(fallback)
+			cmp_ultisnips_mappings.compose({ "select_prev_item" })(fallback)
 		end, { "i", "s" }),
 	},
 	sources = cmp.config.sources({
-		{ name = "luasnip" },
+		{ name = "ultisnips" },
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
 		{ name = "vimtex" },
