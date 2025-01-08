@@ -49,10 +49,10 @@ cmp.setup({
 		["<S-Tab>"] = cmp.mapping(function(fallback)
 			cmp_ultisnips_mappings.compose({ "jump_backwards" })(fallback)
 		end, { "i", "s" }),
-		["<C-f>"] = cmp.mapping(function(fallback)
+		["<C-j>"] = cmp.mapping(function(fallback)
 			cmp_ultisnips_mappings.compose({ "select_next_item" })(fallback)
 		end, { "i", "s" }),
-		["<C-b>"] = cmp.mapping(function(fallback)
+		["<C-k>"] = cmp.mapping(function(fallback)
 			cmp_ultisnips_mappings.compose({ "select_prev_item" })(fallback)
 		end, { "i", "s" }),
 	},

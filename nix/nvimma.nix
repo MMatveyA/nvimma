@@ -15,6 +15,7 @@ let
       cp -r lua $out/lua
       rm -r lua
       cp -r $out/lua $out/nvim
+      cp -r UltiSnips $out/nvim
     '';
   };
   getAttrsRec = attrs:
